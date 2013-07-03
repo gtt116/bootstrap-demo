@@ -52,6 +52,19 @@
         border-left: 2px solid #FAFAFB;
       }
 
+      .formbox {
+        max-width: 800px;
+        margin: 10px auto; 
+        padding: 20px 30px 30px;
+        border: 1px solid #E5E5E5;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
+        -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+        box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
+      }
+
       .content {
         background: red; 
       }
@@ -91,13 +104,13 @@
           </ul>
         </div>
       </div>
-    </div>
+    </div> <!-- navbar -->
 
     <div class="header">
       <div class="container">
         <h1>LOGO</h1>
       </div>
-    </div>
+    </div> <!-- header -->
     <hr/>
 
     <div class="container">
@@ -157,7 +170,32 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </div> <!-- graybox -->
+    </div> <!-- container -->
+
+    <div class="container">
+      <div class="formbox">
+        <form class="form-horizontal">
+          <h3>Input </h3>
+          <div class="control-group">
+            <label class="control-label" for="inputEmail">Email</label>
+            <div class="controls">
+              <input type="text" placeholder="Type something…">
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label" for="inputEmail">Username:</label>
+            <div class="controls">
+              <input type="text" placeholder="Username">
+            </div>
+          </div>
+
+          <input class="btn input-block-level" type="submit"></input>
+        </form>
+
+      </div> <!--formbox-->
+    </div> <!-- container -->
+
   </body>
 </html>
